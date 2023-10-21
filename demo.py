@@ -27,7 +27,7 @@ def display(self):
 
 stu1 = Result()
 stu1.get_data(1101,"Asmita jagadale")
-stu1.set_name("Tennis", "40/50")
+stu1.set_name("Tennis", "40/60")
 stu1.set_name1("Advanced Python", "48/50")
 stu1.set_data("MIT ADT University","MITU19IMBI0012")
 stu1.display()
