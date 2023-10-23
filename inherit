@@ -1,0 +1,33 @@
+class Student():
+    def set_name(self,name,id):
+        self.name = name
+        self.id = id
+
+class Sports(Student):
+    def set_data(self,sports,marks):
+        self.sports = sports
+        self.marks = marks
+
+class Test(Student):
+    def get_name(self,sub,score):
+        self.sub = sub
+        self.score = score
+
+class Result(Sports,Test):
+    def get_data(self,code, dept):
+        self.code = code
+        self.dept = dept
+
+    def display(self):
+        print(f'Student name: {self.name} \nStudent Id: {self.id}')
+        print(f'Sports marks: {self.sports} - {self.marks}')
+        print(f'Test marks: {self.sub} - {self.score}')
+        print(f'Department: {self.dept}')
+        print(f'Code: {self.code}')
+
+obj = Result()
+obj.get_data("0012", "Bioengineering")
+obj.get_name("Python","25/40")
+obj.set_data("Cricket","35/40")
+obj.set_name("Joe","01")
+obj.display()
